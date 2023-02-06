@@ -33,15 +33,17 @@ h2 {
     font-weight: bold;
     font-size: 0.8em;
 }
-
 #myPhoneNumber {
     padding: 0.5em 0.8em;
     margin: 0.3em;
     background-color: #feefc2;
     border-radius: 1em;
+    color: #24596e;
     transition: transform .4s;
 }
-
+#myMailAdress {
+    color: #24596e
+}
 #myPhoneNumber:hover {
     cursor: pointer;
     transform: scale(1.08);
