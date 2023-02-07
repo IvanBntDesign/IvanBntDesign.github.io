@@ -118,13 +118,10 @@ h2 {
 }
 
 /* ----------------------REALIZATIONS---------------------- */
-#realizations>div {
+#realizations {
     display: flex;
     flex-direction: column;
-}
-
-#realizations img {
-    width: 100%;
+    text-align: center;
 }
 
 #realizations h2 {
@@ -142,6 +139,9 @@ h2 {
 .overlay img {
     vertical-align: middle;
     transition: transform .4s;
+    width: 80%;
+    margin: 1em;
+    box-shadow: 0.5em 0.5em 0.5em #1b4656;
 }
 
 .overlay .hoverImg {
@@ -164,17 +164,8 @@ h2 {
     font-size: 30px;
     cursor: pointer;
     transform: scale(0.94);
+    width: 80%;
 }
-
-.overlay:hover .hoverImg {
-    opacity: 1;
-}
-
-.overlay:hover img {
-    cursor: pointer;
-    transform: scale(0.94);
-}
-
 /* ----------------------CONTACT---------------------- */
 #contact {
     background-color: #24596e;
@@ -211,3 +202,20 @@ h2 {
     width: 4em;
     opacity: 0.85;
   }
+
+@media screen and (min-width: 425px) {
+    .overlay:hover .hoverImg {
+        opacity: 1;
+    }
+    
+    .overlay:hover img {
+        cursor: pointer;
+        transform: scale(0.94);
+    }
+    #realizations {
+        display: none;
+    }
+    .overlay img {
+        box-shadow: none;
+    }
+}
