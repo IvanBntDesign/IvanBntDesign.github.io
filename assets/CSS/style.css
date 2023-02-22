@@ -93,7 +93,7 @@ nav li:hover a {
 
 .overlay img {
     vertical-align: middle;
-    transition: transform .4s;
+    transition: transform .4s ease-in-out;
     width: 100%;
 }
 
@@ -104,43 +104,40 @@ nav li:hover a {
     left: 0;
     right: 0;
     opacity: 0;
-    transition: opacity 0.25s ease-in-out;
-    background-color: rgba(255, 255, 255, 0.6);
+    transition: opacity 0.4s ease-in-out;
+    background-color: #16234280;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    font-weight: 700;
-    font-size: 10vw;
-    cursor: pointer;
-    transform: scale(0.94);
+/*     cursor: pointer;
+    transform: scale(0.94); */
     width: 100%;
 }
-
 .overlay:hover .hoverImg {
     opacity: 1;
 }
 
-.overlay:hover img {
+/* .overlay:hover img {
     cursor: pointer;
     transform: scale(0.94);
-}
+} */
 
 /* ----------------------realizations---------------------- */
 
 #realizations {
     display: grid;
+    grid-template-columns: 16fr 2fr 18fr;
     grid-template-areas:
         "realizationsTitle realizationsTitle realizationsTitle"
-        "realizations1 realizations1 realizations1"
-        "realizations2 realizations2 realizations6"
-        "realizations3 realizations3 realizations6"
-        "realizations7 realizations7 realizations7"
-        "realizations8 realizations4 realizations4"
-        "realizations8 realizations5 realizations5"
-        "realizations9 realizations9 realizations9";
+        "realizations4 realizations4 realizations8"
+        "realizations4 realizations4 realizations2"
+        "realizations6 realizations6 realizations2"
+        "realizations3 realizations3 realizations3"
+        "realizations7 realizations5 realizations5"
+        "realizations7 realizations1 realizations1";
 }
 
 #realizations>div {
@@ -181,10 +178,6 @@ nav li:hover a {
 
 #realizations8 {
     grid-area: realizations8;
-}
-
-#realizations9 {
-    grid-area: realizations9;
 }
 
 /* ----------------------À PROPOS---------------------- */
