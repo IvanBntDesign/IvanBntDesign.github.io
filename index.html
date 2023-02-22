@@ -6,104 +6,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/CSS/style.css">
-    <title>IvanBntDesign</title>
+    <title>Ivan Beirnaert Design</title>
 </head>
 
 <body>
-    <header>
-        <section id="topBar">
-            <a id="myMailAdress" href="mailto:ivan.beirnaert@gmail.com">ivan.beirnaert@gmail.com</a>
-            <a id="myPhoneNumber" href="tel:+33672929263">06 72 92 92 63</a>
-        </section>
-        <section id="nameBar">
-            <!--  <img src="assets/img/Portrait-IB.png" alt="Logo IBD"> -->
-            <div>
-                <h1>Ivan BEIRNAERT</h1>
-                <h2>Graphiste / Designer UI</h2>
-            </div>
-        </section>
-    </header>
-    <nav id="navBar">
-        <ul>
-            <li>
-                <a href="#intro">À propos</a>
-                <a href="#realizations">Réalisations</a>
-                <a href="#contact">Contactez-moi</a>
-            </li>
+    <nav class="navBar">
+        <div>
+            <h1>Ivan BEIRNAERT</h1>
+            <p>Graphiste <span>/</span> Designer UI</p>
+        </div>
+        <ul class="menu">
+            <li class="icon"><a href="#"><i class="fa fa-bars"></i></a></li>
+            <li><a href="#realizations">Réalisations</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <section id="intro">
-            <div>
-                <p>"Créatif et curieux, je me suis reconverti dans la conception graphique après une première expérience
-                    en tant qu'ingénieur dans l'industrie.
-                </p>
-                <p>Ma polyvalence et ma capacité d'adaptation me permettent de répondre efficacement aux demandes de mes
-                    clients.
-                </p>
-                <p>J'habite actuellement à Arras et suis mobile dans les Hauts-de-France."
-                </p>
+        <section id="realizations">
+            <h2 id="realizationsTitle">Réalisations</h2>
+            <div id="realizations1" class="overlay">
+                <img src="assets/img/B-carte-visite.jpg" alt="">
+                <div class="hoverImg">
+                    <p></p>
+                </div>
+            </div>
+            <div id="realizations2" class="overlay">
+                <img src="assets/img/D&L-dépliant-mockup.jpg" alt="">
+                <div class="hoverImg">
+                    <p></p>
+                </div>
+            </div>
+            <div id="realizations3" class="overlay">
+                <img src="assets/img/HC-carte-visite-mockup.jpg" alt="">
+                <div class="hoverImg">
+                    <p></p>
+                </div>
+            </div>
+            <div id="realizations4" class="overlay">
+                <img src="assets/img/HC-photo-bougie.JPG" alt="">
+                <div class="hoverImg">
+                    <p></p>
+                </div>
+            </div>
+            <div id="realizations5" class="overlay">
+                <img src="assets/img/LA-logo.png" alt="">
+                <div class="hoverImg">
+                    <p></p>
+                </div>
+            </div>
+            <div id="realizations6" class="overlay">
+                <img src="assets/img/LA-picto.jpg" alt="">
+                <div class="hoverImg">
+                    <p></p>
+                </div>
+            </div>
+            <div id="realizations7" class="overlay">
+                <img src="assets/img/méthode-logo.jpg" alt="">
+                <div class="hoverImg">
+                    <p></p>
+                </div>
+            </div>
+            <div id="realizations8" class="overlay">
+                <img src="assets/img/realizations/landscape8.jpg" alt="">
+                <div class="hoverImg">
+                    <p></p>
+                </div>
+            </div>
+            <div id="realizations9" class="overlay">
+                <img src="assets/img/realizations/landscape9.jpg" alt="">
+                <div class="hoverImg">
+                    <p></p>
+                </div>
             </div>
         </section>
-        <section id="realizations">
-            <h2>Réalisations</h2>
-            <div class="overlay">
-                <img id="candlePicture" src="assets/img/HC-photo-bougie.JPG" alt="Photo d'une bougie HEAVEN CRÉATION">
-                <div class="hoverImg">
-                    <p>Identité graphique</p>
+        <section id="about">
+            <h2>À Propos</h2>
+            <img src="assets/img/photographer.jpg" alt="">
+            <p id="paragraph1">
+
+            </p>
+            <p id="paragraph2">
+
+            </p>
+            <p id="paragraph3">
+
+            </p>
+            <p id="paragraph4">
+
+            </p>
+            <p id="paragraph5">
+
+            </p>
+            <p id="paragraph6">
+
+            </p>
+            <p id="paragraph7">
+
+            </p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="form" action="#">
+                <div>
+                    <label for="fname">Prénom</label>
+                    <input type="text" id="fname" name="firstname" placeholder="John">
                 </div>
-            </div>
-            <div class="overlay">
-                <img id="logoMethod" src="assets/img/méthode-logo.jpg"
-                    alt="Photo d'une brochure dépliante de Drink&Learn">
-                <div class="hoverImg">
-                    <p>Méthodes réfléchies</p>
+                <div>
+                    <label for="lname">Nom</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Doe">
                 </div>
-            </div>
-            <div class="overlay">
-                <img id="bookletMockup" src="assets/img/D&L-dépliant-mockup.jpg"
-                    alt="Photo d'une brochure dépliante de Drink&Learn">
-                <div class="hoverImg">
-                    <p>Dépliants et Flyers</p>
+                <div>
+                    <label for="sujet">Sujet</label>
+                    <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
                 </div>
-            </div>
-            <div class="overlay">
-                <img id="angieLogo" src="assets/img/LA-logo.png" alt="Photo d'une brochure dépliante de Drink&Learn">
-                <div class="hoverImg">
-                    <p>Logos</p>
+                <div>
+                    <label for="emailAddress">Email</label>
+                    <input id="emailAddress" type="email" name="email" placeholder="johndoe@gmail.com">
                 </div>
-            </div>
-            <div class="overlay">
-                <img id="angiePictogram" src="assets/img/LA-picto.jpg"
-                    alt="Photo d'une brochure dépliante de Drink&Learn">
-                <div class="hoverImg">
-                    <p>Pictogrammes</p>
+                <div>
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Votre message"></textarea>
                 </div>
-            </div>
-            <div class="overlay">
-                <img id="cardMockup" src="assets/img/HC-carte-visite-mockup.jpg"
-                    alt="Photo de la carte de visite HEAVEN CRÉATION">
-                <div class="hoverImg">
-                    <p>Cartes de visite</p>
-                </div>
-            </div>
+                <div>
+                    <input type="submit" value="Envoyer">
+                    <div>
+            </form>
         </section>
     </main>
     <div id="scrollToTop">
-        <a href="#top"><img src="assets/img/Flèche-jaune.png" alt="Retourner en haut" /></a>
+        <a href="#top"><i class="fa-solid fa-circle-up"></i></a>
     </div>
-    <footer id="contact">
-        <div>
-            <ul>
-                <li>
-                    <p>Ivan BEIRNAERT</p>
-                    <p>16 rue Nelson Mandela, 62000 ARRAS</p>
-                    <a href="mailto:ivan.beirnaert@gmail.com">ivan.beirnaert@gmail.com</a>
-                    <a href="tel:+33672929263">06 72 92 92 63</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+    <script src="assets/JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/078b0aa04a.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
